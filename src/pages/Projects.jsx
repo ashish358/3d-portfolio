@@ -1,14 +1,47 @@
-import { Link } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 
 import { CTA } from "../components";
-import { projects } from "../constants";
 import { arrow } from "../assets/icons";
+// import AI-SYS-Global from '../assets/img'
+import AISYSGlobal from '../assets/images/AISYSGlobal.png'
+import AmbreHolidays from '../assets/images/AmbreHolidays.png'
+import akinox from '../assets/images/akinox.jpg'
+
+const projects = [
+  {
+    name: "Ambre Holidays",
+    techStack: "HTML, CSS, JavaScript | Backend: Email API",
+    description:
+      "A travel management website designed with a responsive user interface. Integrated email-based functionalities for bookings, inquiries, and itinerary sharing.",
+    link: "https://ambreholidays.com/",
+    iconUrl: AmbreHolidays,
+    theme: "bg-blue-200",
+  },
+  {
+    name: "AI SYS Global",
+    techStack: "React, TailwindCSS, Nodemailer",
+    description:
+      "An AI service provider website featuring a modern front-end and interactive user experience. Integrated backend email services for client communication and service confirmations.",
+    link: "https://www.aisysglobal.in/",
+    iconUrl: AISYSGlobal,
+    theme: "bg-green-200",
+  },
+  {
+    name: "Akinox eCommerce Website",
+    techStack: "MERN Stack (MongoDB, Express, React, Node.js), Stripe",
+    description:
+      "A fully functional e-commerce platform for watches, offering product browsing, checkout, user authentication, and secure payments. Integrated Stripe for seamless transactions.",
+    link: "#",
+    iconUrl: akinox,
+    theme: "bg-yellow-200",
+  },
+];
 
 const Projects = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        My{" "}
+        My{" "}
         <span className='blue-gradient_text drop-shadow font-semibold'>
           Projects
         </span>
@@ -30,8 +63,8 @@ const Projects = () => {
               <div className='btn-front rounded-xl flex justify-center items-center'>
                 <img
                   src={project.iconUrl}
-                  alt='threads'
-                  className='w-1/2 h-1/2 object-contain'
+                  alt={project.name}
+                  className='w-15 h-15 object-contain'
                 />
               </div>
             </div>

@@ -25,7 +25,12 @@ import threads from './threads.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
+import php from './php.png'
 import soundoff from './soundoff.png'
+import postgresql from './postgresql.svg'
+import mysql from './mysql.png'
+import bootstrap from './bootstrap.png'
+import threejs from './threejs.png'
 
 export {
     css,
@@ -55,5 +60,10 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    php,
+    postgresql,
+    mysql,
+    bootstrap,
+    threejs
 }

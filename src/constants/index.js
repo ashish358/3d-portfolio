@@ -1,4 +1,8 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+// import { meta, shopify, starbucks, tesla,geniesoftsystem } from "../assets/images";
+import geniesoftsystem from '../assets/images/geniesoftsystem.png'
+import hono from '../assets/images/hono.svg'
+import devdazzle from '../assets/images/devdazzle.jpg'
+
 import {
     car,
     contact,
@@ -23,7 +27,12 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    php,
+    postgresql,
+    mysql,
+    bootstrap,
+    threejs
 } from "../assets/icons";
 
 export const skills = [
@@ -106,62 +115,69 @@ export const skills = [
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    }, 
+    {
+        imageUrl: php,
+        name: "PHP",
+        type: "Backend",
+    }, 
+    {
+        imageUrl: hono,
+        name: "HONO",
+        type: "Backend",
+    },
+    {
+        imageUrl: postgresql,
+        name: "postgresql",
+        type: "database",
+    },
+    {
+        imageUrl: mysql,
+        name: "mysql",
+        type: "database",
+    }
+    ,   
+    {
+        imageUrl: bootstrap,
+        name: "bootstrap",
+        type: "frontend",
+    },
+    {
+        imageUrl: threejs,
+        name: "threejs",
+        type: "frontend",
     }
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Full Stack Developer Intern",
+        company_name: "Genie Soft System PVT. LTD.",
+        icon:  geniesoftsystem,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        // date: "March 2020 - April 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Mastered web development with HTML, CSS, and JavaScript.",
+            "Built responsive websites using Bootstrap and media queries.",
+            "Developed dynamic applications with React, Node.js, and RESTful APIs.",
+            "Led a team of 5, streamlining workflows and delivering a web application.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Founder & Full Stack Developer",
+        company_name: "Dev Dazzle",
+        icon: devdazzle,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        // date: "Jan 2021 - Feb 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Designed and developed web applications using React.js, Next.js, Three.js, Solidity, and other modern technologies.",
+            "Collaborated with cross-functional teams, including designers and product managers, to deliver high-quality web solutions.",
+            "Implemented responsive and interactive UI/UX designs for seamless user experiences across various devices and browsers.",
+            "Developed and optimized smart contracts using Solidity for blockchain-based applications.",
+            "Ensured high-performance and scalable web applications through efficient coding practices and optimized workflows."
         ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+        
+    }    
 ];
 
 export const socialLinks = [
@@ -173,12 +189,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/ashish358',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/ashish-dhadekar',
     }
 ];
 
